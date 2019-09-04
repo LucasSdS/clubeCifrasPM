@@ -1,7 +1,5 @@
 const Musica = require("./musica.js")
 
-// var exports = module.exports
-
 var musicas = new Array()
 class Busca {
 
@@ -24,5 +22,4 @@ class Busca {
 
 }
 module.exports = Busca
-//module.exports.var = musicas
 
