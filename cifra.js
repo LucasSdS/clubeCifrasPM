@@ -1,4 +1,4 @@
-const db = require('./database')
+cnfoaaasdonst db = require('./database')
 const Musica = require('./musica')
 const Busca = require('./busca.js')
 
@@ -13,13 +13,9 @@ class Cifra{
         this.verificaExistenciaMusica(nomeMusica)
         this.musica.setCifra(this)
 
-        // if(db.execute(`SELECT * FROM musica WHERE nome = "${this.nome}"`) == false){
-        //     Musica = new musica(this.nome)
-        // }
-
-        //criaCifraBd()
+       
     }
-    //cria a cifra no banco refereciando a musica
+    //cria a cifra no banco refereciando a usica
     criaCifraBd(){
         db.execute(`INSERT INTO cifra (nome,musica) VALUES ("${this.nome}", "${this.cifra}")`)
     }
